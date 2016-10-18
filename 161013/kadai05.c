@@ -9,7 +9,7 @@ int main() {
 
 	// 問題文が分かりにくいが、日本語が下手すぎて説明の仕方を思いつかない
 
-	/*
+	/* FIXME
 	 * iを0からNUMFRT-1まで増やしながらループ {
 	 *   出力("I have a <instrument>.\n");
 	 *   出力("I have a <fruit[i]>.\n");

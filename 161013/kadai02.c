@@ -8,16 +8,16 @@ int main() {
 	while (!quit && (c = getchar()) != EOF) {
 		switch (c) { // ifでも大丈夫。
 			case 'g':
-			case 'G': // 小文字大文字両方に対応する
+			case 'G': // 小文字大文字両方に対応するためには、間にbreak入れない形でcaseを連ねればオッケー
 				printf("ここにメッセージを入れる");
 				break;
 
-				// 以下c,pについても同様
+				// FIXME: 以下c,pについても同様
 			case 'q':
 			case 'Q':
 				quit = 1;
 				break;
-			default: // '\n'などはここに流れる
+			default: // '\n'のようなcaseにない文字などはここに流れる
 				; // do nothing
 		}
 	}

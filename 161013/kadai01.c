@@ -13,7 +13,7 @@ int main() {
 }
 
 int should_be_nabeatu(int i) {
-	/*
+	/* FIXME
 	 * 3の倍数 -> 3で割ったときの余りが0
 	 *
 	 * 3が付く数字 -> 桁の数字が3

@@ -21,7 +21,7 @@ int main() {
 	 */
 	for (int y = 0; y < HEIGHT; y++) {
 		for (int x = 0; x < WIDTH; x++) {
-			if (1 /*ここに式を入れる*/) {
+			if (1 /* FIXME: ここに式を入れる*/) {
 				matrix[y][x] = '*';
 			} else {
 				matrix[y][x] = '.';
