@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int should_be_nabeatu(int);
+int is_nabeatu_number(int);
 
 int main() {
 	for (int i = 1; i <= 1000; ++i) {
-		if (should_be_nabeatu(i)) {
+		if (is_nabeatu_number(i)) {
 			printf("%d!!!\n", i);
 		} else {
 			printf("%d\n", i);
@@ -12,7 +12,7 @@ int main() {
 	}
 }
 
-int should_be_nabeatu(int i) {
+int is_nabeatu_number(int i) {
 	/* FIXME
 	 * 3の倍数 -> 3で割ったときの余りが0
 	 *
