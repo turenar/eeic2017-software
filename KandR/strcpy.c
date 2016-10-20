@@ -14,3 +14,13 @@ void strcpy2(char *s, char *t){
     ; // do nothing
   }
 }
+
+//別解2というか、参考実装です。strcpy1をもっと冗長に書いた感じのコード
+void strcpy3(char *s, char *t) {
+  while (*s != '\0') {
+    *s = *t;
+    s++;
+    t++;
+  }
+  *s = '\0'; // この行がなぜstrcpy3では必要かを考えてみてください
+}
