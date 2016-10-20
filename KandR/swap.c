@@ -9,7 +9,7 @@ int main () {
   printf("a is %d, b is %d\n.", a, b);//a is 2, b is 3
   swap(&a, &b);//&aはaへのポインタ。つまりa自体ではなくaのアドレスを与える/
   printf("a is %d, b is %d\n.", a, b);//a is 3, b is 2
-  
+
   return 0;
 }
 

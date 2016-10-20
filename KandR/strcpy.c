@@ -10,6 +10,7 @@ void strcpy1(char *s, char *t)
 
 //別解（マスターすべきとは書いてありますが、個人的には初見で理解しにくいので、はじめのうちは避ける方がベターな気がします…
 void strcpy2(char *s, char *t){
-  while (*s++ = *t++)
-    ;
+  while (*s++ = *t++) {
+    ; // do nothing
+  }
 }
