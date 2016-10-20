@@ -1,4 +1,4 @@
-/*教科書のstrcmpコードです。mainから読んでください。同様にmainから読んでください。*/
+/*教科書のstrcmpコードです。同様にmainから呼んでください。*/
 
 int strcmp1(char *s, char *t)
 {
