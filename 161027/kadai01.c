@@ -1,5 +1,7 @@
 #include <stdio.h>
+// ↓ system()
 #include <stdlib.h>
+// ↓ sleep()
 #include <unistd.h>
 
 #define WIDTH 30
@@ -8,9 +10,11 @@
 /*
  * 教官によると、関数の引数の型が char (*matrix)[nantoka] じゃないとだめみたいなこと言ってましたが、
  * 下のようにchar matrix[HEIGHT][WIDTH]で十分です。
+ * 呼び出しの仕方は init_matrix(matrix); のように、&とかは付けずに呼び出しちゃってください。
  *
- * main()が長くなると、読むのが嫌になるので、できるだけ関数としてくくり出せるところはくくり出したほうが
- * あとあとになって効いてくると思います。ただ、これはあくまで好みなので、関数で書くより
+ *
+ * (mainのような) 関数が長くなると読むのが嫌になってくるので、関数としてくくり出せるところはできるだけくくり出したほうが
+ * あとあとになって嬉しいことがあると思います。ただ、これはあくまで好みなので、関数で書くより
  * main()の中に書いたほうが好きであれば、そのように。
  */
 
@@ -37,7 +41,8 @@ void init_matrix(char matrix[HEIGHT][WIDTH]) {
 void update_frame(char matrix[HEIGHT][WIDTH]) {
 	static int i = 0;
 	// FIXME: (i秒後に→i回目の呼び出しのときに) i列i番目の値が*になるようにする。
-	// iを増やすのを忘れずに
+	// 気をつけないと、iが40のような大きな値になって、matrix配列の外にアクセスしてSegmentation Faultするかも。
+	// iを増やすのを忘れずに。
 }
 
 void show_matrix(char matrix[HEIGHT][WIDTH]) {
