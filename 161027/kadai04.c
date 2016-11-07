@@ -124,6 +124,7 @@ void load_matrix(char matrix[HEIGHT][WIDTH]) {
 	 *
 	 * while(まだファイル終端ではない) {
 	 *   count = (一文字読み込んで、その文字 (char) を数字 (int) にする。'0'を足したり引いたりする。繰り返し回数)
+     *   (ascii char-> int への変換について。http://hawkeye-mihawk.blogspot.jp/2011/03/ccharint.html)
 	 *   c = (一文字読み込む。繰り返す文字)
 	 *   dataにcを<count>回追加。
 	 * }
@@ -168,7 +169,7 @@ void write_matrix(char matrix[HEIGHT][WIDTH]) {
 					// FIXME: repeatに9とcountの小さい方を代入する
 					fputc('0' + repeat, fp); // repeatが6ならば'6'を出力
 					fputc(prev_char, fp);
-					// FIXME: 今出力した繰り返し回数分だけcountから引く。つまり、repeat=11, count=9だったらcount=2になるようにする
+					// FIXME: 今出力した繰り返し回数分(repeat)だけcountから引く。つまり、count=11, repeat=9だったらcount=2になるようにする
 				}
 				// FIXME: prev_charとcountを更新する。
 			} else {

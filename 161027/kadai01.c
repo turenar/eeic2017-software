@@ -28,6 +28,7 @@ int main() {
 
 	init_matrix(matrix);
 	for (;;) { // Ctrl+Cするまで無限ループ
+        //ちなみにkwhr先生は while(true) 構文を使ったようです。
 		update_frame(matrix);
 		show_matrix(matrix);
 		sleep(1);
