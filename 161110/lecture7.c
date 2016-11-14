@@ -44,7 +44,7 @@ int main() {
   a = &b;
   printf("%d\n", *a); // output: 10
   //ちなみにもちろん以下もオッケーですが問題の趣旨的に多分ポインタを使う方が正しいかと。
-  printf("%d\n", *a); // output: 10
+  printf("%d\n", b); // output: 10
 
   // question4
   printf("%c\n", ("hello"[1] - 1)); // output:d
