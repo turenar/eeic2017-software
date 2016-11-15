@@ -8,7 +8,7 @@ echo 'SRC =' kadai*.c >&3
 echo 'DIR =' "${DIR}" >&3
 echo 'ZIP =' '../学籍番号.zip' >&3
 printf 'EXE =' >&3
-for i in kadai*.c; do
+for i in *.c; do
 	printf ' %s' "${i%.c}.bin" >&3
 done
 echo >&3
