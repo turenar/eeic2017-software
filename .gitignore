@@ -34,3 +34,14 @@
 *.su
 
 Makefile
+*.d
+*.tsv
+*.sh
+.gdb_history
+*.tar*
+*.zip
+*.bak
+
+*.txt
+!readme.txt
+tags
